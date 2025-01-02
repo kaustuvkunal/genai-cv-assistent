@@ -20,7 +20,7 @@ st.subheader(" ")
 # st.write(notes)
 
 st.subheader(body="Upload your Resume ( in PDF form )")
-pdf_doc = st.file_uploader("Please upload the pdf here 🔰: ",type =['pdf'])
+pdf_doc = st.file_uploader("Please upload the Resume in pdf format here : ",type =['pdf'])
 
 st.subheader("Enter the Job Description 📋", divider = True)
 job_desc= st.text_area(label = " Paste the Job Description Below ", max_chars=10000)
