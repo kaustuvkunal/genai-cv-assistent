@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-from pdf import read_pdf
+from pdf_reader import read_pdf
 
 import os
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
