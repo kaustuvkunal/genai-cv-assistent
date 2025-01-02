@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 # Lets setup streamlit front end and read the pdf document
 #st.set_page_config("Career Compass")
 
-st.header(" Generative-AI - CV Assistent ", divider = "green")
+st.header(" CV Assistant for Recruiters & Applicants ", divider = "blue")
 st.subheader(" ")
 # notes = f'''
 # st.write(notes)
