@@ -4,7 +4,7 @@
 import streamlit as st
 #import google.generativeai as genai
 #from pdf import read_pdf
-from analysis import profile
+from cv_evaluator import profile
 
 import warnings
 # Ignore all warnings
