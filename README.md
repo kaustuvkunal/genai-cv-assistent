@@ -10,4 +10,4 @@ pinned: false
 short_description: GenAI Resume Assistant for Recruiter & Applicant
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+This Project is deployed in hugging face [here](https://huggingface.co/spaces/kaustuvkunal/cv-assistant)
