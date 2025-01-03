@@ -1,18 +1,19 @@
 from pypdf import PdfReader
-import streamlit as st
+import logging
 
+
+# Updated PDF parsing with logging
 def read_pdf(pdf_doc):
-    """Extract text from a PDF document."""
+    logging.info("Starting PDF reading process.")
     try:
         pdf = PdfReader(pdf_doc)
-        raw_text = ""
-        for page in pdf.pages:
+        raw_text = ''
+        for i, page in enumerate(pdf.pages):
             content = page.extract_text()
             if content:
                 raw_text += content
-        if not raw_text.strip():
-            raise ValueError("PDF does not contain readable text.")
+        logging.info("PDF reading completed successfully.")
         return raw_text
     except Exception as e:
-        st.error(f"Error reading PDF: {str(e)}")
-        return ""
+        logging.error(f"Error reading PDF: {e}")
+        raise

@@ -1,5 +1,6 @@
 import streamlit as st
 from cv_evaluator import profile
+import logging
 import warnings
 
 # Ignore all warnings
